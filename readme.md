@@ -147,7 +147,7 @@ document.body.appendChild(div);
 
 stopPropagation() ->The stopPropagation method stops the event from bubbling up to parent elements. If I click a button inside a card and call stopPropagation on the button's click event, the card's click event will not fire because the bubbling is stopped.
 
-** preventDefault() stops the browsers action, but stopPropagation() stops the event from reaching parents.
+preventDefault() stops the browsers action, but stopPropagation() stops the event from reaching parents.
 ---
 
 ## 🧪 Challenges Part (10 Marks)

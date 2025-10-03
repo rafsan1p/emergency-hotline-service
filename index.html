@@ -15,7 +15,40 @@
 </head>
 
 <body class="bg-[#f5fff6]">
-    
+     <!-- Navbar Section -->
+    <nav class="bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Left Side Icons -->
+                <div class="flex items-center gap-2 md:gap-3">
+                    <img src="assets/logo.png" alt="Emergency Logo" class="h-12 w-12 md:h-14 md:w-14">
+                    <h1 class="text-base sm:text-xl md:text-2xl font-bold text-[#006747]">
+                        Emergency<br>Service
+                    </h1>
+                </div>
+                
+                <!-- Right Side Icons -->
+                <div class="flex items-center gap-2 sm:gap-4">
+                    <!-- Heart Icon with Count -->
+                    <div class="flex items-center gap-1 md:gap-2 bg-[#41ff6b1a] px-2 py-1 rounded-xl md:px-6 md:py-2 md:rounded-2xl">
+                        <span id="heart-count" class="font-semibold text-gray-800 text-sm sm:text-base">0</span>
+                        <i class="fa-solid fa-heart text-red-500 text-lg sm:text-xl"></i>
+                    </div>
+                    
+                    <!-- Coin Count -->
+                    <div class="flex items-center gap-1 md:gap-2 bg-[#41ff6b1a] px-2 py-1 rounded-xl md:px-6 md:py-2 md:rounded-2xl">
+                        <span id="coin-count" class="font-semibold text-gray-800 text-sm sm:text-base">100</span>
+                        <img src="assets/coin.png" alt="Coin" class="h-5 w-5 sm:h-6 sm:w-6">
+                    </div>
+                    
+                    <!-- Copy Count -->
+                    <div class="bg-green-600 text-white px-2 md:px-6 py-1 md:py-2 rounded-lg md:rounded-2xl font-semibold hover:bg-green-700 text-sm sm:text-base">
+                        <span id="copy-count">0</span> Copy
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
 
     <!-- JavaScript -->
     <script src="script.js"></script>

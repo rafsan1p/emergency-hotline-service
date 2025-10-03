@@ -111,11 +111,43 @@ You have to create a `Readme.md` file. and write down following questions. Dont 
 ### 6. Answer the following questions clearly:
 
 1. What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?
+
+-->getElementById ->It gets a single element from the HTML document based on its unique ID.
+Ex.-> document.getElementById('card');
+
+getElementsByClassName ->This method selects all elements that share the same class name.
+Ex.->document.getElementsByClassName('card');
+
+querySelector ->It gets the first element matching any CSS selector.
+
+querySelectorAll ->It gets all elements matching a CSS selector.
+
+
 2. How do you **create and insert a new element into the DOM**?
+
+--> First I use document.createElement() to make a new element, then use appendChild() to add it to the DOM.
+
+let div = document.createElement("div");
+div.textContent = "Hello";
+document.body.appendChild(div);
+
+
+
 3. What is **Event Bubbling** and how does it work?
+
+-->Event Bubbling is a behavior in JavaScript where an event that occurs on a child element does not just stay on that element but travels upward through all of its parent elements. For example, if I have a button inside a div and I click the button, the click event first fires on the button itself, then it bubbles up and fires on the div, then continues up to the body, html, and finally the document.This event naturally propagates upward through the DOM tree.
+
 4. What is **Event Delegation** in JavaScript? Why is it useful?
+
+-->Instead of adding events to many child elements, I can put one event listener on a parent and handle events for children inside it.It is useful for performance and handling dynamic elements.
+
 5. What is the difference between **preventDefault() and stopPropagation()** methods?
 
+-->preventDefault() -> The preventDefault method stops the browser from doing its default action for an event. For example, when I click a submit button in a form the browser normally submits the form and reloads the page, but calling preventDefault stops this from happening so I can handle the form submission with JavaScript instead.
+
+stopPropagation() ->The stopPropagation method stops the event from bubbling up to parent elements. If I click a button inside a card and call stopPropagation on the button's click event, the card's click event will not fire because the bubbling is stopped.
+
+** preventDefault() stops the browsers action, but stopPropagation() stops the event from reaching parents.
 ---
 
 ## 🧪 Challenges Part (10 Marks)
